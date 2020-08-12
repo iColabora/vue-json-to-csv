@@ -39,7 +39,7 @@ module.exports = {
           Object.keys(labels).map(function (k, s) {
             type = typeof m[k]
             if (type === 'number' || type === 'float') {
-              row += m[k] + separator
+              row += '"' + m[k] + '"' + separator
             } else {
               if (m[k] !== null && m[k] !== 'null') {
                 row += '"' + m[k] + '"' + separator
