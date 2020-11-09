@@ -42,7 +42,7 @@ module.exports = {
               row += '"' + m[k] + '"' + separator
             } else {
               if (m[k] !== null && m[k] !== 'null') {
-                row += '"' + m[k] + '"' + separator
+                row += '"="' + m[k] + '""' + separator
               } else {
                 row += '""' + separator
               }
